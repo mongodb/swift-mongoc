@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-  spec.name             = "SwiftMongoc"
+  spec.name             = "libmongoc"
   spec.version          = "0.0.1"
   spec.summary          = "Swift bindings for libmongoc"
   spec.homepage         = "https://github.com/10gen/swift-mongoc"

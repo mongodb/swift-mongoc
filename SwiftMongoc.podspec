@@ -14,4 +14,6 @@ Pod::Spec.new do |spec|
   spec.module_name = "libmongoc"
   spec.preserve_path = "module.modulemap"
   spec.module_map = "module.modulemap"
+
+  spec.dependency "libbson", :git => "ssh://git@github.com/10gen/swift-bson"
 end

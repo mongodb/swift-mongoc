@@ -8,6 +8,8 @@ Pod::Spec.new do |spec|
   spec.source           = { :git => "ssh://git@github.com/10gen/swift-bson.git", :branch => "master" }
 
   spec.osx.deployment_target = '10.9'
+  spec.ios.deployment_target = "11.2"
+
   spec.swift_version = '4.0'
   spec.requires_arc = true
 

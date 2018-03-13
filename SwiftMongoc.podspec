@@ -15,5 +15,5 @@ Pod::Spec.new do |spec|
   spec.preserve_path = "module.modulemap"
   spec.module_map = "module.modulemap"
 
-  spec.dependency "libbson", :git => "ssh://git@github.com/10gen/swift-bson"
+  spec.dependency "libbson", "> 0"
 end

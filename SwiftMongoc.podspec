@@ -8,14 +8,14 @@ Pod::Spec.new do |spec|
   spec.platform   = :ios, "9.0"
 
   spec.source     = {
-    :git => "ssh://git@github.com/10gen/swift-bson.git",
+    :git => "ssh://git@github.com/10gen/swift-mongoc.git",
     :branch => "master"
   }
 
   spec.requires_arc = true
 
   spec.module_name = "libmongoc"
-  spec.preserve_path = "module.modulemap"
+  spec.preserve_paths = [ "module.modulemap", "libmongoc.h" ]
   spec.module_map = "module.modulemap"
 
   spec.dependency "libbson", "> 0"

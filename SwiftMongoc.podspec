@@ -15,8 +15,9 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
 
   spec.module_name = "libmongoc"
-  spec.preserve_paths = [ "module.modulemap", "libmongoc.h" ]
+  spec.source_files = "libmongoc.h"
   spec.module_map = "module.modulemap"
+  spec.preserve_paths = [ "module.modulemap", "libmongoc.h" ]
 
   spec.dependency "libbson", "> 0"
 end
